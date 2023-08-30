@@ -1,7 +1,5 @@
 package HashSet;
 
-import Inheritance.Amenity;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -40,7 +38,7 @@ public class Main {
 
     public  void insertRoomDetails(int Count) throws IOException {
         for (int i=0;i<Count;i++){
-            Inheritance.Amenity amenity=new Inheritance.Amenity();
+            Amenity amenity=new Amenity();
             StringBuilder builder=new StringBuilder("HRI");
             StringBuffer _amenityId=new StringBuffer("HRA");
             System.out.print("Room Number : ");
@@ -78,7 +76,7 @@ public class Main {
     public void displayRoomDetails(){
         System.out.println("\n");
         try {
-            for (Inheritance.Amenity amenity : rooms) {
+            for (Amenity amenity : rooms) {
                 System.out.println("Room Number   : " + amenity.getRoomNumber());
                 System.out.println("Room Type     : " + amenity.getRoomType());
                 System.out.println("Room Capacity : " + amenity.getTotalCapacity());
