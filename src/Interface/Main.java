@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
-    public ArrayList<Inheritance.Amenity> rooms=new ArrayList<>();
+    public ArrayList<Amenity> rooms=new ArrayList<>();
     public static Scanner scanner=new Scanner(System.in);
     public static void main(String[] args) {
         System.out.print("Enter the number of records to be Added Interface: ");
@@ -18,7 +18,7 @@ public class Main {
 
     public  void insertRoomDetails(int Count){
         for (int i=0;i<Count;i++){
-            Inheritance.Amenity amenity=new Inheritance.Amenity();
+            Amenity amenity=new Amenity();
             System.out.print("Room Number : ");
             amenity.setRoomNumber(scanner.nextLine());
             System.out.print("Room Type : ");

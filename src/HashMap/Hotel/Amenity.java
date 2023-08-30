@@ -1,6 +1,4 @@
-package StringStringBuilderBuffer;
-
-
+package HashMap.Hotel;
 public class Amenity extends Room {
     String amenityName;
     String amenityDescription;
@@ -32,7 +30,7 @@ public class Amenity extends Room {
 
     @Override
     public String getRoomNumber() {
-        return null;
+        return this.roomNumber;
     }
 
     @Override
@@ -47,7 +45,7 @@ public class Amenity extends Room {
 
     @Override
     public void setRoomType(String roomType) {
-            this.roomType=roomType;
+        this.roomType=roomType;
     }
 
     @Override
