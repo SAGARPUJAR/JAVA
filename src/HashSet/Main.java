@@ -11,7 +11,7 @@ public class Main {
     public static InputStreamReader inputStreamReader=new InputStreamReader(System.in);
     public static BufferedReader bufferedReader=new BufferedReader(inputStreamReader);
     public static void main(String[] args) throws IOException {
-        StringStringBuilderBuffer.Main main=new StringStringBuilderBuffer.Main();
+        Main main=new Main();
         int count=-1;
         do {
             try{

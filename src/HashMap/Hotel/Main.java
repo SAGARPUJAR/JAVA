@@ -6,13 +6,12 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashMap;
-
 public class Main {
     public HashMap<String, Inheritance.Amenity> rooms=new HashMap<>();
     public static InputStreamReader inputStreamReader=new InputStreamReader(System.in);
     public static BufferedReader bufferedReader=new BufferedReader(inputStreamReader);
     public static void main(String[] args) throws IOException {
-        StringStringBuilderBuffer.Main main=new StringStringBuilderBuffer.Main();
+        Main main=new Main();
         int count=-1;
         do {
             try{

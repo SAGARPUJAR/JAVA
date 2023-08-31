@@ -1,4 +1,5 @@
 package HashMap.Hotel;
+
 public class Amenity extends Room {
     String amenityName;
     String amenityDescription;

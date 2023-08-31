@@ -1,4 +1,5 @@
 package HashSet;
+
 public class Amenity extends Room {
     String amenityName;
     String amenityDescription;
