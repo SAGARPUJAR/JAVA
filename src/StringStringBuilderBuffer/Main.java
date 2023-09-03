@@ -1,10 +1,12 @@
 package StringStringBuilderBuffer;
 
-import Inheritance.Amenity;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashMap;
+import java.lang.String;
+import java.lang.StringBuilder;
+import java.lang.StringBuffer;
 
 public class Main {
     public HashMap<String, Amenity> rooms=new HashMap<>();

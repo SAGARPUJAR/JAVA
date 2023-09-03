@@ -1,13 +1,14 @@
 package HashMap.Hotel;
 
-import Inheritance.Amenity;
+import HashMap.Hotel.Amenity;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashMap;
+
 public class Main {
-    public HashMap<String, Inheritance.Amenity> rooms=new HashMap<>();
+    public HashMap<String, Amenity> rooms=new HashMap<>();
     public static InputStreamReader inputStreamReader=new InputStreamReader(System.in);
     public static BufferedReader bufferedReader=new BufferedReader(inputStreamReader);
     public static void main(String[] args) throws IOException {
@@ -38,7 +39,7 @@ public class Main {
 
     public  void insertRoomDetails(int Count) throws IOException {
         for (int i=0;i<Count;i++){
-            Inheritance.Amenity amenity=new Inheritance.Amenity();
+            Amenity amenity=new Amenity();
             StringBuilder builder=new StringBuilder("HRI");
             StringBuffer _amenityId=new StringBuffer("HRA");
             System.out.print("Room Number : ");
@@ -76,7 +77,7 @@ public class Main {
     public void displayRoomDetails(){
         System.out.println("\n");
         try {
-            for (Inheritance.Amenity amenity : rooms.values()) {
+            for (Amenity amenity : rooms.values()) {
                 System.out.println("Room Number   : " + amenity.getRoomNumber());
                 System.out.println("Room Type     : " + amenity.getRoomType());
                 System.out.println("Room Capacity : " + amenity.getTotalCapacity());

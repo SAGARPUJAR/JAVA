@@ -16,4 +16,5 @@ public abstract class Room {
     public abstract int getTotalCapacity();
 
     public abstract void setTotalCapacity(int totalCapacity);
+
 }
