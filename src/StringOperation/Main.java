@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Main so=new Main();
         Scanner sc=new Scanner(System.in);
-        System.out.println("Enter the String value : ");
+        System.out.println("Enter the StringSolution value : ");
         String value=sc.nextLine();
         String result=  so.getStringResult(value);
         System.out.println(result);
@@ -19,10 +19,10 @@ public class Main {
             result=Character.isDigit(values);
         }
         if (result==true){
-            returnValue= "String is Alphanumeric";
+            returnValue= "StringSolution is Alphanumeric";
         }
         else{
-            returnValue= "String contains only Alphabets";
+            returnValue= "StringSolution contains only Alphabets";
         }
         return  returnValue;
     }

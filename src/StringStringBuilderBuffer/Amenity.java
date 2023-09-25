@@ -29,6 +29,7 @@ public class Amenity extends Room {
         isAvailable = available;
     }
 
+
     @Override
     public String getRoomNumber() {
         return this.roomNumber;
@@ -36,7 +37,7 @@ public class Amenity extends Room {
 
     @Override
     public void setRoomNumber(String roomNumber) {
-        this.roomNumber=roomNumber;
+            this.roomNumber = roomNumber;
     }
 
     @Override
@@ -46,7 +47,7 @@ public class Amenity extends Room {
 
     @Override
     public void setRoomType(String roomType) {
-            this.roomType=roomType;
+        this.roomType=roomType;
     }
 
     @Override
