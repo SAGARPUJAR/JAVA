@@ -156,9 +156,3 @@ public class CreateAmenity extends JFrame implements ActionListener {
         fw.close();
     }
 }
-
-class Amenity {
-    String amenityName;
-    String amenityDescription;
-    String isAvailable;
-}
