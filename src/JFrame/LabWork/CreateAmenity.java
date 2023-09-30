@@ -142,23 +142,6 @@ public class CreateAmenity extends JFrame implements ActionListener {
     }
 
     public void addDetailsToJSON() throws IOException {
-
-//        JSONObject obj = new JSONObject();
-//        obj.put("amenityName",  amenityName.getText());
-//        obj.put("amenityDescription", amenityDescription.getText());
-//        obj.put("isAvailable", isAvailable.isSelected() ? "Available" : "Not Available");
-//        JSONArray arr = new JSONArray();
-//        arr.add("amenityName",  amenityName.getText());
-//        arr.add("amenityDescription", amenityDescription.getText());
-//        arr.add("isAvailable", isAvailable.isSelected() ? "Available" : "Not Available");
-//
-//        FileWriter fileWrite =new FileWriter("amenityData.JSON",true);
-//        fileWrite.write(arr.toString());
-
-        // JSON object.
-        // Key value pairs are unordered.
-        // JSONObject supports java.util.Map interface.
-
         JSONObject amneityObj = new JSONObject();
         amneityObj.put("Name", "Hotel");
         amneityObj.put("Author", "SAGAR");
@@ -167,7 +150,7 @@ public class CreateAmenity extends JFrame implements ActionListener {
         amenityArray.add("Amenity Description :"+ amenityDescription.getText());
         amenityArray.add("isAvailable : " + (isAvailable.isSelected() ? "Available" : "Not Available"));
         amneityObj.put("AmenityList", amenityArray);
-        FileWriter fw = new FileWriter("amenityData.json",true);
+        FileWriter fw = new FileWriter(amenityName.getText()+".json",true);
         fw.write(amneityObj.toJSONString());
         fw.flush();
         fw.close();
